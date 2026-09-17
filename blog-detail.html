@@ -13,7 +13,6 @@
     <nav>
         <a href="index.html">IMDb Top 3 Movies</a> |
         <a href="blog.html">Dev Blogs</a> |
-        <a href="blog-detail.html">Detail Blog</a> |
         <a href="form.html">Form Pendaftaran</a> |
         <a href="cv.html">Curriculum Vitae</a>
     </nav>
@@ -32,7 +31,7 @@
                 <img src="images/vishnu.png" width="32" height="32" alt="Foto profil Vishnu Satheesh">
             </td>
             <td valign="middle">
-                <p><span><b>Vishnu Satheesh</b></span><br /><span>Posted on May 31</span></p>
+                <p><span><b>Vishnu Satheesh</b></span><br><span>Posted on May 31</span></p>
             </td>
         </tr>
     </table>
@@ -50,12 +49,12 @@
     <h2>Step 1: Setup Docker</h2>
     <p>First, let's set up Docker. I'm using a simple React app as an example, but feel free to use any application or codebase of your choice. Create a Dockerfile in your project directory to define how your app should be containerized.</p>
     <p>
-        Dockerfile:<br />
-        FROM node:20-alpine<br />
-        WORKDIR /app<br />
-        COPY package*.json ./<br />
-        RUN npm install<br />
-        COPY . .<br />
+        Dockerfile:<br>
+        FROM node:20-alpine<br>
+        WORKDIR /app<br>
+        COPY package*.json ./<br>
+        RUN npm install<br>
+        COPY . .<br>
         CMD [ "npm", "start" ]
     </p>
 
@@ -76,8 +75,7 @@
                 <img src="https://placehold.co/32x32" width="32" height="32" alt="Foto profil pengguna">
             </td>
             <td valign="middle">
-                <label for="komentar">Tambahkan komentar:</label><br />
-                <textarea id="komentar" name="komentar" rows="3" cols="50" placeholder="Add to the discussion"></textarea>
+                <textarea rows="3" cols="50" placeholder="Add to the discussion"></textarea>
             </td>
         </tr>
     </table>
